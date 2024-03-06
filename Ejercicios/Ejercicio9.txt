@@ -1,0 +1,21 @@
+
+# 4 mayúsculas o minúsculas, seguidas de 4 dígitos
+^[a-zA-Z]{4}[0-9]{4}$
+
+# Cualquier carácter excepto “$” una o más veces, seguido de “$”
+^[^$]+[$]
+
+# Los comentarios multilinea en lenguaje C 
+ //*.*?*//
+
+# Un posible nombre de variable en Python
+^[A-Za-z]+[0-9]* 
+
+# Correos con el formato de la UNAM 
+^[a-zA-Z0-9_.+-]+[@ciencias.unam.mx]
+
+# Expresión regular que coincida con una dirección de correo IP versión 4 
+ (^[0-9].{1,3}){3}[0-9]{1,3}
+
+#Expresión regular para encontrar un correo electrónico 
+/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}
